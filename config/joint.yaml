@@ -1,0 +1,14 @@
+controller_manager:
+  ros__parameter:
+    update_rate: 100
+  
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+    forward_position_controller:
+      type: forward_command_controller/ForwardCommandController
+
+  forward_position_controller:
+  ros__parameters:
+    joints:
+      - link_4_5_joint

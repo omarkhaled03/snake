@@ -1,0 +1,126 @@
+controller_manager:
+  ros__parameters:
+    update_rate: 100
+    
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+     
+    
+    joints1_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints2_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints3_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints4_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints5_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints6_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints7_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints8_controllers:
+      type: forward_command_controller/ForwardCommandController
+
+    joints9_controllers:
+      type: forward_command_controller/ForwardCommandController
+# forward_command_controller/ForwardCommandController
+# position_controllers/JointGroupPositionController
+  # Position Controllers ---------------------------------------
+joint_state_broadcaster:
+   ros__parameters:
+    joints:
+      - link_1_2_joint
+      - link_2_3_joint
+      - link_3_4_joint
+      - link_4_5_joint
+      - link_5_6_joint
+      - link_6_7_joint
+      - link_7_8_joint
+      - link_8_9_joint  
+      - link_9_10_joint  
+    
+
+
+
+joints1_controllers:
+   ros__parameters:
+    joints:
+      - link_1_2_joint
+    interface_name: effort
+    command_interfaces:
+      - effort   
+
+joints2_controllers:
+   ros__parameters:
+    joints:
+      - link_2_3_joint
+    interface_name: effort
+    command_interfaces:
+      - effort  
+
+joints3_controllers:
+   ros__parameters:
+    joints:
+      - link_3_4_joint
+    interface_name: effort
+    command_interfaces:
+      - effort 
+
+joints4_controllers:
+   ros__parameters:
+    joints:
+      - link_4_5_joint
+    interface_name: effort
+    command_interfaces:
+      - effort  
+
+joints5_controllers:
+   ros__parameters:
+    joints:
+      - link_5_6_joint
+    interface_name: effort
+    command_interfaces:
+      - effort  
+
+joints6_controllers:
+   ros__parameters:
+    joints:
+      - link_6_7_joint
+    interface_name: effort
+    command_interfaces:
+      - effort  
+
+joints7_controllers:
+   ros__parameters:
+    joints:
+      - link_7_8_joint
+    interface_name: effort
+    command_interfaces:
+      - effort  
+
+joints8_controllers:
+   ros__parameters:
+    joints:
+      - link_8_9_joint
+    interface_name: effort
+    command_interfaces:
+      - effort 
+
+joints9_controllers:
+   ros__parameters:
+    joints:
+      - link_9_10_joint
+    interface_name: effort
+    command_interfaces:
+      - effort  
+  
+  
